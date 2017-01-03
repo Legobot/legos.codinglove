@@ -16,7 +16,7 @@
 
 from setuptools import setup, find_packages
 description = 'Fetch a post from TheCodingLove tumblr'
-name = 'legos.couragewolf'
+name = 'legos.codinglove'
 setup(
     name=name,
     version='0.1.0',
