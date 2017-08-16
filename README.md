@@ -11,8 +11,6 @@ _A Legobot plugin_
 This lego listens for `!codinglove` at the beginning of a message and returns a random post from [The Coding Love](http://thecodinglove.com/)
 
 ## Installation
-
-## Installation
 `pip3 install legos.wtf`
 
 This is a Lego designed for use with [Legobot](https://github.com/Legobot/Legobot), so you'll get Legobot along with this. To deploy it, import the package and add it to the active legos like so:
