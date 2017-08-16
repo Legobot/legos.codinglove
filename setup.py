@@ -19,7 +19,7 @@ description = 'Fetch a post from TheCodingLove tumblr'
 name = 'legos.codinglove'
 setup(
     name=name,
-    version='0.1.0',
+    version='0.1.1',
     namespace_packages=name.split('.')[:-1],
     license='GPLv3',
     description=description or name,
