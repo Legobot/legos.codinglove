@@ -1,15 +1,23 @@
 language: python
 python:
-- '3.5'
+  - '3.3'
+  - '3.4'
+  - '3.5'
+  - 3.5-dev
+  - '3.6'
+  - 3.6-dev
+  - 3.7-dev
+  - nightly
+install:
+  - pip install -r requirements.txt
 script:
-- flake8 .
-- bandit -r .
+  - bandit -r .
+  - flake8 .
 deploy:
   provider: pypi
   user: briggsb
   password:
     secure: mg2Ayw0DT+yJyxN3CKJeBaxcW1ssrrY8ExxDcNGnGqjVhw1wBqe7Bq2KIF1VWHUUUdZFB+IK1AZADQJDYP38VZYjHPU29w/80goYXZ6IeHqjj1b3hwppyao3ApQkx4Y8/HTvpBO2/2rgM2jtw3gmzvUBi1HKMfzzP/gDAZ+6COUDAWO9Z9VrvfhyFDLfa4FmuHyzeBLD16Gn5qWl8Vb1fKGGOhHhYbxMKmfGQjvl7vY4m0bjw1OO3gFWI1yQ+1c4ixWQmHkD7pyslOpwJ1ArTbnc5COFx9m4I/vr5CtQNesJPVDKKuEl6LSJw8BAbcjWrwt+LqSZWxI/bVzGujVWMvDecQym18N9Af/w8/k71ilGeG5hGtco/Jzl0kWz0D9G+3MlNWfjtdZmDVX8a29QIpuClJGMD8YqqM/y7NOzgkw7I+q0jPC76eIANh08bY31Ws7HWVC2GAo7eSxIl5M2RWz9K8pVEHkwdYlif2sownChmFG5dIyLvjGIGe0T0yqzTrLp/1C2rZ6kO1XUpdT2Vk48GJNIdHNS2ilJC0XvUVxk2b7A3FIe+89dysc9fRmIoxmSyBTo1bU/KPY45ZhruJY7GXZ8elSRG7v5bvN4zodgsvrpzOoXeY8h4FjMZLtAhQX/WQTSLBTA/VcMIXpa6/caPMz06HYrnw0s+dOBxs0=
+  distributions: sdist bdist_wheel
   on:
     tags: true
-    distributions: sdist bdist_wheel
-    repo: bbriggs/legos.codinglove

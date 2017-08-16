@@ -26,12 +26,11 @@ setup(
     author='Brenton Briggs II',
     url='https://github.com/bbriggs/' + name,
     install_requires=['legobot>=1.0.1',
-                      'requests'
-                      ],
+                      'requests'],
     classifiers=[
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
-
-        'Programming Language :: Python :: 3'
+        'Programming Language :: Python :: 3',
+        'Development Status :: 4 - Beta'
     ],
     packages=find_packages()
 )
